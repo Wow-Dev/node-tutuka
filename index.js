@@ -23,7 +23,7 @@ function Tutuka(config, logger){
   this.path = config.path;
   this.log = logger;
   try {
-    this.xmlrpc = xmlrpc.createClient({
+    this.xmlrpc = xmlrpc.createSecureClient({
       host: this.host,
       port: this.port,
       path: this.path
